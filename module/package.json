@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "swiper": "^11.0.7"
-  },
   "devDependencies": {
     "parcel": "^2.12.0"
   }
