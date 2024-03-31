@@ -1,20 +1,20 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import Home from "./components/views/Home";
-import Nav from "./components/layout/Nav";
-import Grammar from "./grammar";
+import Header from "./components/layout/Header";
+import Home from "./components/views/home/Home";
+import Event from "./study/event/Event";
 
 function App() {
-  const listArr = [
-    { title: "Home", des: "홈 화면" },
-    { title: "About", des: "소개 페이지" },
-  ];
+  const navArr = [{ title: "Home" }, { title: "About" }, { title: "SignIn" }];
   return (
-    <>
-      <Grammar />
-    </>
+    <div className="warp">
+      <Event />
+      <Header title="dashboard" nav={navArr} />
+      <Home title="home" desc="홈 화면" />
+      <Home title="about" desc="소개 화면" />
+      <Home title="signin" desc="로그인 화면" />
+      <Footer />
+    </div>
   );
 }
 
